@@ -1,0 +1,284 @@
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+}
+
+.lead{
+    padding:1%    
+}
+
+.introIcon{
+    color: #495057;
+}
+
+.introIcon2{
+    color:#4C6EF5;
+}
+
+#introSection{
+    margin-bottom: 0.3%;
+}
+
+#expSection{
+    margin-bottom: 0.3%;
+}
+
+#personalProjectSection{
+    margin-bottom: 0.3%;
+}
+
+#contactSection{
+    margin-bottom: 0.3%;
+}
+
+#profilePic{
+    border-radius: 40px;
+}
+
+#introSection{
+    padding-top: 1%;
+    padding-bottom:1%;
+    background-color: #98a2db;
+    border-radius: 15px;
+    border: 1px solid #909ce3;
+}
+
+.innerDiv{
+    background-clip: content-box;
+    background-color: #F2F2F2;
+    overflow-wrap: break-word;
+    border-radius: 35px;
+}
+
+#expSection{
+    background-color: #9acffa;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 15px;
+    border: 1px solid #8ed0ff;
+}
+
+#introP{
+    padding-top:0%;
+}
+
+#jobDesc4{
+    margin-top:0%;
+}
+
+a {
+    color: #26A69A;
+}
+
+.btn-primary {
+    background-color: #26A69A;
+    border-color: #26A69A;
+}
+
+.btn-primary:hover {
+    background-color: #26A69A;
+    border-color: #26A69A;
+}
+
+.progress-bar{
+    background-color: #26A69A;
+}
+
+.sectionHeader{
+    margin-bottom: 0%;
+}
+
+.jobDescDiv{
+    margin: 1%;
+    padding: 0.2%;
+    border: 2px solid #87cefa;
+    border-radius: 15px;
+}
+
+.contactDiv{
+    margin: 0.5%;
+}
+
+#contactForm{
+    text-align: center;
+}
+
+#personalProjectSection{
+    background-color: #feaa8f ;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 15px;
+    border: 1px solid #ffa381;
+}
+
+.personalProjectDescDiv{
+    margin: 1%;
+    padding: 0.2%;
+    border: 2px solid #ffa381;
+    border-radius: 15px;
+}
+
+.personalProjectNoteDiv{
+    margin-left: 1%;
+    margin-right: 1%;
+    padding-left: 0.2%;
+    padding-right: 0.2%;
+    padding-bottom: 0.4%;
+}
+
+#personalProjectDesc3{
+    margin-top:0%;
+}
+
+.customBadges{
+    font-size:10px;
+}
+
+#contactSection{
+    background-color: #dbefdc;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 15px;
+    border: 1px solid #d8f2da;
+}
+
+#personalProjectHeader{
+    padding-bottom: 0.2%;
+}
+
+#contactHeader{
+    padding-bottom: 0%;
+}
+
+#workInProgress{
+    text-align: center;
+}
+
+.progress{
+    height: 30px;
+}
+
+.progress-bar-animated{
+    width: 57%;
+}
+
+#outerlayer{
+    margin-top:4%;
+    margin-bottom:4%;
+    margin-left:7.5%;
+    margin-right:7.5%;
+
+    border-radius: 1%;
+
+    width: 85%;
+    height: 80vh;
+
+    background-color:#FFFFFF;
+}
+
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+    position: relative;
+  }
+
+  /* Featurettes
+------------------------- */
+  
+/* Thin out the marketing headings */
+.featurette-heading {
+    padding:1%;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1;
+    /* rtl:remove */
+    letter-spacing: -.05rem;
+}
+  
+  
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+  
+@media (min-width: 40em) {
+    .featurette-heading {
+        font-family: 'PT Sans', sans-serif;
+        font-size: 40px;
+    }
+}
+
+@media only screen
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3)
+    and (orientation: portrait) {
+        #expHeader{
+            padding-top: 3%;
+        }
+
+        #contactHeader{
+            padding-top: 3%;
+        }
+        
+        #personalProjectHeader{
+            padding-top: 3%;
+        }
+
+        #jobDesc0{
+            margin-bottom: 2.5%;
+        }
+
+        #personalProjectDesc0{
+            margin-bottom: 2.5%;
+        }
+
+        .progress{
+            margin-bottom: 1%;
+        }
+}
+
+#seahawksJokeImg{
+    height: 100%;
+    width: 100%;           
+}
+
+@media only screen 
+    and (min-device-width: 414px) 
+    and (min-device-height: 896px) 
+    and (-webkit-device-pixel-ratio: 2) 
+    and (orientation: portrait) { 
+        #expHeader{
+            padding-top: 3%;
+        }
+    
+        #contactHeader{
+            padding-top: 3%;
+        }
+        
+        #personalProjectHeader{
+            padding-top: 3%;
+        }
+    
+        #jobDesc0{
+            margin-bottom: 2.5%;
+        }
+    
+        #personalProjectDesc0{
+            margin-bottom: 2.5%;
+        }
+    
+        .progress{
+            margin-bottom: 1%;
+        }
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+    background-color: #495057;
+    color: white;
+}
