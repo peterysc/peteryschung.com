@@ -1,0 +1,140 @@
+#mainSection{
+    background-image: url("../assets/seattle_background.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 1000px;
+    margin-right:0px;
+}
+
+.introIcon{
+    color: #495057;
+}
+
+.introIcon2{
+    color:#4C6EF5;
+}
+
+#quickIntro{
+    background: blue;
+    color: white;
+    width: 30%;
+    height: 333px;
+}
+
+#quickIntroPic{
+    height: 15em;
+}
+
+#introCard{
+    background-color: #98a2db;
+}
+
+#expCard{
+    background-color: #9acffa;
+}
+
+#projectCard{
+    background-color: #feaa8f;
+}
+
+#contactCard{
+    background-color: #dbefdc;
+}
+
+.card-header{
+    border-bottom: none;
+}
+
+.sectionBtn{
+    background-color: #F2F2F2;
+    text-decoration: none;
+    color:#5a5a5a;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+#introP{
+    padding: 0.2% 0.5% 0 0.5%;
+    background-color: #F2F2F2;
+    color:#5a5a5a;
+    font-family: 'Poppins', sans-serif;
+}
+
+#seahawksJokeImg{
+    height: 100%;
+    width: 100%;           
+}
+
+a {
+    color: #26A69A;
+}
+
+a:hover {
+    color: #26A69A;
+}
+
+.btn-primary {
+    background-color: #26A69A;
+    border-color: #26A69A;
+}
+
+.btn-primary:hover {
+    background-color: #26A69A;
+    border-color: #26A69A;
+}
+
+.nav-link{
+    color: black;
+}
+
+.expHeader{
+    margin-bottom: 0.5%;
+}
+
+#contactMeSpan{
+    padding: 0.2% 0.5% 0 0.5%;
+    background-color: #F2F2F2;
+    color:#5a5a5a;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+}
+
+#contactDiv{
+    margin: 0.5%;
+    padding: 0.2% 0.5% 0 0.5%;
+    background-color: #F2F2F2;
+}
+
+#contactForm{
+    text-align: center;
+}
+
+#workInProgress{
+    text-align: center;
+}
+
+.progress{
+    height: 30px;
+}
+
+.progress-bar-animated{
+    width: 57%;
+}
+
+.progress-bar{
+    background-color: #26A69A;
+}
+
+.inputRow{
+    margin-bottom: 1%;
+}
+
+#contactNameInputRow{
+    margin-top: 1%;
+}
+
+#contactBtn{
+    margin-bottom: 1%;
+    padding-right: 15px;
+}
