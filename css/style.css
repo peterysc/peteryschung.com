@@ -1,11 +1,24 @@
-body {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    color: #5a5a5a;
+.mainSection{
+    background-image: url("../assets/seattle_background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 1000px;
+    margin-right:0px;
+    padding:12% 15% 12% 15%;
+    overflow: hidden;
 }
 
-.lead{
-    padding:1%    
+#secondMainSection{
+    height:450px;
+    padding:0;
+}
+
+.jobInfo{
+    margin-left: 15%;
+    margin-right: 15%;
 }
 
 .introIcon{
@@ -16,58 +29,159 @@ body {
     color:#4C6EF5;
 }
 
-#introSection{
-    margin-bottom: 0.3%;
+#expHeaderSection{
+    margin-left:10%;
+    margin-right:10%;
 }
 
-#expSection{
-    margin-bottom: 0.3%;
+#accordion{
+    margin-left: 10%;
+    margin-right:10%;
 }
 
-#personalProjectSection{
-    margin-bottom: 0.3%;
+.personalProjectDate{
+    float: right;
+    margin-top:0.5%;
 }
 
-#contactSection{
-    margin-bottom: 0.3%;
+.jobDescriptionSection{
+    margin-left:10%;
+    margin-right:10%;
+    padding-top:1%;
 }
 
-#profilePic{
-    border-radius: 40px;
+.jobDescText{
+    font-size: 18px;
 }
 
-#introSection{
-    padding-top: 1%;
-    padding-bottom:1%;
-    background-color: #98a2db;
-    border-radius: 15px;
-    border: 1px solid #909ce3;
-}
-
-.innerDiv{
-    background-clip: content-box;
-    background-color: #F2F2F2;
-    overflow-wrap: break-word;
-    border-radius: 35px;
-}
-
-#expSection{
-    background-color: #9acffa;
-    padding-top: 1%;
+.jobDescText li{
     padding-bottom: 1%;
-    border-radius: 15px;
-    border: 1px solid #8ed0ff;
 }
+
+.msftJobInfo{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-image: url("../assets/ms_background.jpg");
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.msftJobInfo span{
+    background-color: #747a76;
+    color:white;
+    padding-left: 0.2%;
+    padding-right: 0.2%;
+}
+
+.msftJobInfo a{
+    color: white;
+}
+
+.msftJobInfo a:hover{
+    color: white;
+}
+
+.sapJobInfo{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-image: url("../assets/web_dev.jpg");
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 0px 200px;
+    text-align: right;
+}
+
+.sapJobInfo span{
+    background-color: #747a76;
+    color:white;
+    padding-left: 0.2%;
+    padding-right: 0.2%;
+}
+
+.awsJobInfo{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-image: url("../assets/data_background.jpg");
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0px -500px;
+    background-repeat: no-repeat;
+}
+
+.awsJobInfo span{
+    background-color: #747a76;
+    color:white;
+    padding-left: 0.2%;
+    padding-right: 0.2%;
+}
+
+#quickIntro{
+    background-image: url("../assets/bash_background.png");
+    background-size: cover;
+    color: black;
+    width: 45%;
+    height: 100%;
+    overflow:hidden;
+    margin: auto;
+}
+
+#introPicDiv{
+    padding:10% 5% 10% 5%;
+    text-align: center;
+}
+
+#introTitles{
+    padding:15% 5% 10% 5%;
+    text-align: center;
+}
+
+#quickIntroPic{
+    height: auto;
+    max-height: 15em;
+}
+
+#introCard{
+    background-color: #98a2db;
+}
+
+#expCard{
+    background-color: #9acffa;
+}
+
+#projectCard{
+    background-color: #feaa8f;
+}
+
+#contactCard{
+    background-color: #dbefdc;
+}
+
+.card-header{
+    border-bottom: none;
+}
+
 
 #introP{
-    padding-top:0%;
+    padding: 0.2% 0.5% 0 0.5%;
+    color:#5a5a5a;
+    font-family: 'Poppins', sans-serif;
 }
 
-#jobDesc4{
-    margin-top:0%;
+#aboutMyselfBtn{
+    margin-top:1%;
 }
 
 a {
+    color: #26A69A;
+}
+
+a:hover {
     color: #26A69A;
 }
 
@@ -81,74 +195,32 @@ a {
     border-color: #26A69A;
 }
 
-.progress-bar{
-    background-color: #26A69A;
+.nav-link{
+    color: black;
 }
 
-.sectionHeader{
-    margin-bottom: 0%;
+.expHeader{
+    margin-bottom: 0.5%;
+    font-size: 40px;
+    font-size: bold;
 }
 
-.jobDescDiv{
-    margin: 1%;
-    padding: 0.2%;
-    border: 2px solid #87cefa;
-    border-radius: 15px;
+#contactMeSpan{
+    padding: 0.2% 0.5% 0 0.5%;
+    background-color: #F2F2F2;
+    color:#5a5a5a;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
 }
 
-.contactDiv{
+#contactDiv{
     margin: 0.5%;
+    padding: 0.2% 0.5% 0 0.5%;
+    background-color: #F2F2F2;
 }
 
 #contactForm{
     text-align: center;
-}
-
-#personalProjectSection{
-    background-color: #feaa8f ;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    border-radius: 15px;
-    border: 1px solid #ffa381;
-}
-
-.personalProjectDescDiv{
-    margin: 1%;
-    padding: 0.2%;
-    border: 2px solid #ffa381;
-    border-radius: 15px;
-}
-
-.personalProjectNoteDiv{
-    margin-left: 1%;
-    margin-right: 1%;
-    padding-left: 0.2%;
-    padding-right: 0.2%;
-    padding-bottom: 0.4%;
-}
-
-#personalProjectDesc3{
-    margin-top:0%;
-}
-
-.customBadges{
-    font-size:10px;
-}
-
-#contactSection{
-    background-color: #dbefdc;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    border-radius: 15px;
-    border: 1px solid #d8f2da;
-}
-
-#personalProjectHeader{
-    padding-bottom: 0.2%;
-}
-
-#contactHeader{
-    padding-bottom: 0%;
 }
 
 #workInProgress{
@@ -163,115 +235,293 @@ a {
     width: 57%;
 }
 
-#outerlayer{
-    margin-top:4%;
-    margin-bottom:4%;
-    margin-left:7.5%;
-    margin-right:7.5%;
-
-    border-radius: 1%;
-
-    width: 85%;
-    height: 80vh;
-
-    background-color:#FFFFFF;
+.progress-bar{
+    background-color: #26A69A;
 }
 
-#map {
-    height: 400px;
-    /* The height is 400 pixels */
-    width: 100%;
-    /* The width is the width of the web page */
-    position: relative;
-  }
-
-  /* Featurettes
-------------------------- */
-  
-/* Thin out the marketing headings */
-.featurette-heading {
-    padding:1%;
-    font-family: 'PT Sans', sans-serif;
-    font-weight: 300;
-    line-height: 1;
-    /* rtl:remove */
-    letter-spacing: -.05rem;
+.inputRow{
+    margin-bottom: 1%;
 }
-  
-  
-/* RESPONSIVE CSS
--------------------------------------------------- */
-  
-@media (min-width: 40em) {
-    .featurette-heading {
-        font-family: 'PT Sans', sans-serif;
-        font-size: 40px;
+
+#contactNameInputRow{
+    margin-top: 1%;
+}
+
+#contactBtn{
+    margin-bottom: 1%;
+    padding-right: 15px;
+}
+
+#personalProjectSection{
+    margin-bottom: 2%;
+}
+
+.customBadges{
+    font-size:10px;
+}
+
+
+/* iPhone 5/SE ----------- */
+@media only screen and 
+    (min-device-width: 320px) and 
+    (max-device-height: 568px) and 
+    (orientation : portrait)
+{
+    .mainSection{
+        padding: 10% 0 0 0;
+        height: 600px;
+    }
+
+    #quickIntro{
+        width: 90%;
+        height: 90%;
+    }
+
+    #introTitles{
+        text-align: center;
+    }
+
+    #positionTitle{
+        font-size: 13px;
+    }
+
+    #universityTitle{
+        font-size: 10px;
+    }
+
+    .icons i{
+        text-align:center;
     }
 }
 
-@media only screen
-    and (device-width : 375px) 
-    and (device-height : 812px) 
-    and (-webkit-device-pixel-ratio : 3)
-    and (orientation: portrait) {
-        #expHeader{
-            padding-top: 3%;
-        }
+/* iPhone 6/7/8 ----------- */
+@media only screen and 
+    (min-device-width: 375px) and 
+    (max-device-height: 667px) and 
+    (orientation : portrait)
+{
+    .mainSection{
+        padding: 10% 0 0 0;
+        height: 620px;
+    }
 
-        #contactHeader{
-            padding-top: 3%;
-        }
-        
-        #personalProjectHeader{
-            padding-top: 3%;
-        }
+    #quickIntro{
+        width: 90%;
+        height: 90%;
+    }
 
-        #jobDesc0{
-            margin-bottom: 2.5%;
-        }
+    #introTitles{
+        text-align: center;
+    }
 
-        #personalProjectDesc0{
-            margin-bottom: 2.5%;
-        }
+    #positionTitle{
+        font-size: 16px;
+    }
 
-        .progress{
-            margin-bottom: 1%;
-        }
+    #universityTitle{
+        font-size: 11px;
+    }
 }
 
-#seahawksJokeImg{
-    height: 100%;
-    width: 100%;           
+/* iPhone 6/7/8 plus ----------- */
+@media only screen and 
+    (min-device-width: 414px) and 
+    (max-device-height: 736px) and
+    (-webkit-device-pixel-ratio: 3)
+{
+    .mainSection{
+        padding: 10% 0 0 0;
+        height: 650px;
+    }
+    
+    #quickIntro{
+        width: 90%;
+        height: 90%;
+    }
+
+    #introTitles{
+        text-align: center;
+    }
+
+    #positionTitle{
+        font-size: 20px;
+    }
+
+    #universityTitle{
+        font-size: 12px;
+    }
 }
 
-@media only screen 
-    and (min-device-width: 414px) 
-    and (min-device-height: 896px) 
-    and (-webkit-device-pixel-ratio: 2) 
-    and (orientation: portrait) { 
-        #expHeader{
-            padding-top: 3%;
-        }
+/* iPhone X ----------- */
+@media only screen and 
+    (min-device-width: 375px) and 
+    (max-device-height: 812px) and 
+    (orientation : landscape) and
+    (-webkit-device-pixel-ratio: 3)
+{     
+    .mainSection{
+        padding: 10% 0 0 0;
+        height: 1000px;
+    }
+     
+    /* Styles */
+    #quickIntro{
+        width: 90%;
+        height: 80%;
+    }
+
+    #universityTitle{
+        font-size: 15px;
+    }
+
+    #introTitles{
+        text-align: center;
+    }
+}
     
-        #contactHeader{
-            padding-top: 3%;
-        }
-        
-        #personalProjectHeader{
-            padding-top: 3%;
-        }
+@media only screen and 
+    (min-device-width: 375px) and 
+    (max-device-width: 375px) and
+    (max-device-height: 812px) and 
+    (orientation : portrait) and 
+    (-webkit-device-pixel-ratio: 3)
+{
+    .mainSection{
+        padding: 10% 0 0 0;
+        height: 720px;
+    }
+
+    /* Styles */
+    #quickIntro{
+        width: 80%;
+        height: 80%;
+    }
+
+    #NameTitle{
+        font-size: 40px;
+    }
+
+    #introTitles h5{
+        width: 100%;
+    }
+
+    #positionTitle{
+        font-size: 25px;
+    }
+
+    #universityTitle{
+        font-size: 15px;
+    }
+
+    .msftJobInfo{
+        background-position: -630px;
+    }
+
+    .sapJobInfo{
+        background-position: left;
+    }
+
+    .awsJobInfo{
+        background-position: -120px;
+    }
     
-        #jobDesc0{
-            margin-bottom: 2.5%;
-        }
+    #accordion button{
+        text-align: center;
+    }
+}
+
+/* iPad */
+@media only screen and 
+    (min-device-width: 768px) and 
+    (max-device-width: 768px) and
+    (max-device-height: 1024px)
+{
+    .mainSection{
+        padding: 10% 0 0 0;
+        height: 950px;
+    }
+
+    /* Styles */
+    #quickIntro{
+        width: 90%;
+        height: 80%;
+    }
+
+    #introTitles{
+        text-align: center;
+    }
+
+    #introTitles h5{
+        width: 100%;
+    }
+     
+    #positionTitle{
+        font-size: 20px;
+    }
+
+    #universityTitle{
+        font-size: 14px;
+    }
+
+    .msftJobInfo{
+        background-position: -650px;
+    }
+
+    .sapJobInfo{
+        background-position: left;
+    }
+
+    .awsJobInfo{
+        background-position: -120px;
+    }
     
-        #personalProjectDesc0{
-            margin-bottom: 2.5%;
-        }
+}
+
+/* iPad Pro */
+@media only screen and 
+    (min-device-width: 1024px) and 
+    (max-device-width: 1024px) and
+    (max-device-height: 1366px)
+{
+    .mainSection{
+        padding: 10% 0 0 0;
+        height: 1250px;
+    }
+
+    /* Styles */
+    #quickIntro{
+        width: 90%;
+        height: 80%;
+    }
+
+    #introTitles{
+        text-align: center;
+    }
+
+    #introTitles h5{
+        width: 100%;
+    }
+     
+    #positionTitle{
+        font-size: 25px;
+    }
+
+    #universityTitle{
+        font-size: 18px;
+    }
+
+    .msftJobInfo{
+        background-position: -650px;
+    }
+
+    .sapJobInfo{
+        background-position: left;
+    }
+
+    .awsJobInfo{
+        background-position: -120px;
+    }
     
-        .progress{
-            margin-bottom: 1%;
-        }
 }
 
 .back-to-top {
@@ -281,4 +531,12 @@ a {
     display: none;
     background-color: #495057;
     color: white;
+}
+
+#developedBy{
+    font-size: 14px;
+}
+
+#v1Span{
+    font-size: 12px;
 }
