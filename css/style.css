@@ -430,6 +430,157 @@ a:hover {
     }
 }
 
+/* 2436x1125px at 458ppi */
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (orientation : portrait) 
+    and (-webkit-device-pixel-ratio : 3) { 
+        .mainSection{
+            padding: 10% 0 0 0;
+            height: 700px;
+        }
+    
+        /* Styles */
+        #quickIntro{
+            width: 80%;
+            height: 90%;
+        }
+    
+        #NameTitle{
+            font-size: 40px;
+        }
+    
+        #introTitles h5{
+            width: 100%;
+        }
+    
+        #positionTitle{
+            font-size: 25px;
+        }
+    
+        #universityTitle{
+            font-size: 15px;
+        }
+    
+        .msftJobInfo{
+            background-position: -630px;
+        }
+    
+        .sapJobInfo{
+            background-position: left;
+        }
+    
+        .awsJobInfo{
+            background-position: -120px;
+        }
+        
+        #accordion button{
+            text-align: center;
+        }
+}
+
+/* 1792x828px at 326ppi */
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (orientation : portrait) 
+    and (-webkit-device-pixel-ratio : 2) {
+
+        .mainSection{
+            padding: 10% 0 0 0;
+            height: 770px;
+        }
+    
+        /* Styles */
+        #quickIntro{
+            width: 80%;
+            height: 80%;
+        }
+    
+        #NameTitle{
+            font-size: 40px;
+        }
+    
+        #introTitles h5{
+            width: 100%;
+        }
+    
+        #positionTitle{
+            font-size: 25px;
+        }
+    
+        #universityTitle{
+            font-size: 15px;
+        }
+    
+        .msftJobInfo{
+            background-position: -630px;
+        }
+    
+        .sapJobInfo{
+            background-position: left;
+        }
+    
+        .awsJobInfo{
+            background-position: -120px;
+        }
+        
+        #accordion button{
+            text-align: center;
+        }
+}
+
+/* 2688x1242px at 458ppi */
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (orientation : portrait) 
+    and (-webkit-device-pixel-ratio : 3) { 
+        .mainSection{
+            padding: 10% 0 0 0;
+            height: 770px;
+        }
+    
+        /* Styles */
+        #quickIntro{
+            width: 80%;
+            height: 80%;
+        }
+    
+        #NameTitle{
+            font-size: 40px;
+        }
+    
+        #introTitles h5{
+            width: 100%;
+        }
+    
+        #positionTitle{
+            font-size: 25px;
+        }
+    
+        #universityTitle{
+            font-size: 15px;
+        }
+    
+        .msftJobInfo{
+            background-position: -630px;
+        }
+    
+        .sapJobInfo{
+            background-position: left;
+        }
+    
+        .awsJobInfo{
+            background-position: -120px;
+        }
+        
+        #accordion button{
+            text-align: center;
+        }
+}
+
 /* iPad */
 @media only screen and 
     (min-device-width: 768px) and 
