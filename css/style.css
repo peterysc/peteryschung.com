@@ -533,6 +533,10 @@ a:hover {
     color: white;
 }
 
+#footerDiv{
+    padding: 0% 10% 1% 10%;
+}
+
 #developedBy{
     font-size: 14px;
 }
