@@ -3,190 +3,209 @@
 <head>
     <title>Peter's website</title>
     <meta charset="utf-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
 
     <!-- Font Awesome - Icon dependencites-->
     <script src="https://kit.fontawesome.com/dda32ab196.js" crossorigin="anonymous"></script>
 
+    <!-- jQuery for bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
     <!-- Bootstrap related dependencies-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/style.css">
-    
-    <!-- Google Maps JS-->
-    <script defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjH1jMyJ1Vzt8s25D5MGisYm_FHUmMEtM&callback=initMap">
-    </script>
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-186044435-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-        gtag('config', 'UA-186044435-1');
-    </script>
-
-    <!-- Google Tag Manager -->
-    <script>
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-PS6B2CG');
-    </script>
-    <!-- End Google Tag Manager -->
 </head>
 
-<main>
-
 <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript>
-        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PS6B2CG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-    </noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <div id="outerlayer">
-        <div class="row featurette">
-            <h1>Welcome to my fancy<b><i>(*abruptly boot-strapped*)</i></b> personal webpage!</h1>
-        </div>
-        <div id="introSection" class="row featurette">
-            <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 innerDiv">
-                <h2 class="sectionHeader featurette-heading">About myself</h2>
-                <p id="introP" class="lead">Hi there, my name is Peter :^) I'm a strong believer of <b><i>Fail Fast</i></b> and learning is at my core. I really enjoy programming and solving problems. I absolutely enjoy finding simpler solutions to complex problems. I am always looking forward to learn something new and share it with others.
-                    <br><br>I am currently based in Seattle, Washington. I love every aspect of what Seattle can offer - from the majestic, sublime PNW curves, to the endless but serene rain/showers and finally, the emotional roller coaster ride Seahawks generously offer their fans every game...
-                    <button id="seahawksJokeBtn" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-                        Exhibit A
-                    </button>
-                    
-                    <br><br>
-                  
-                    When the weather permits, I try my best to stay outdoors - I love riding my roadbike and hitting the slopes to shred on fresh powder with my snowboard. 
-                    When the weather does not permit, I'm always looking for documentaries like Social Dilemma
-                    or cookings shows like the Chef TV show on Netflix. I also like to read - my latest companion has been the book, <a href="https://amzn.com/0061339202" target="_blank">Flow</a>, by <a href="https://en.wikipedia.org/wiki/Mihaly_Csikszentmihalyi" target="_blank">Mihaly Csikszentmihalyi</a>. With the quarantine restrictions, this book really has hit home for me.
-                    <br><br>
-                  
-                    As for a professional introduction, I am currently working at Microsoft with a title of Software Engineer II. <br>I work with fault tolerant distributed systems in CAP CoreServices team under <a href="https://powerplatform.microsoft.com/en-us/" target="_blank">Business Application Group</a>. Prior to this team, I have worked in highly available API developments
-                    and had a decent exposure in full-stack engineering (more details can be found below in <a id="moveToExp" href="#expSection">Experience</a> or <a id="moveToPersonalProject" href="#personalProjectSection">Personal Project</a>). Before my first full time gig, I completed the bachelors of Science, majoring in Computer Science, at the University of British Columbia (Go t-birds!) and received couple of Dean's Honour List.
-                    <br><br>
-                    
-                    Cheers to you if you've managed to read this far!
-                    <a id="moveToContact" href="#contactSection">Holla at your boy</a> if you find my work experience somehow relevant/beneficial to your career. Holla for anything really - extra points if you know a good poutine joint in Seattle!
+    <div class="mainSection">
+        <div id="quickIntro" class="row">
+            <div id="introPicDiv" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-5" > 
+                <img id="quickIntroPic" class="rounded-circle" src="assets/mainPic2.png" data-holder-rendered="true">
+            </div>
+            <div id="introTitles" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-7">
+                <h2 id="NameTitle">Peter Chung</h2>
+                    <span id="positionTitle"><strong>SWE II @ Microsoft</strong></span>
                     <br>
+                    <span id="universityTitle"><strong>University of British Columbia</strong></span>
                     <br>
                     <a href="mailto:peterysc@gmail.com"><i class="fas fa-envelope-square fa-2x introIcon" title="Mail Peter"></i></a>
                     <a href="https://www.linkedin.com/in/peterysc/" target="_blank"><i class="fab fa-linkedin fa-2x introIcon2" title="Linkedin"></i></a>
                     <!-- <a href="https://drive.google.com/file/d/1nHR9HmbwdJntAc7Xps0Vba-SGwTCP5BQ/view?usp=sharing" target="_blank" ><i class="fas fa-address-card fa-2x" title="Resume"></i></a> -->
                     <a href="https://github.com/peterysc" target="_blank"><i class="fab fa-github-alt fa-2x introIcon" title="Github"></i></a>
-                </p>
-            </div>
-            <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
-                <svg id="profilePic" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="700" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid slice" focusable="false"><title>profilePic</title><image href="assets/peter_pic.jpg" height="100%" width="100%"/></svg>
-            </div>
-        </div>
-
-        <div id="expSection" class="row featurette" data-spy="scroll" data-target="exp">
-            <div class="col-md-12 innerDiv">
-                <h2 id="expHeader" class="sectionHeader featurette-heading">Experience</h2>
-                <div class="jobDescDiv col-xs-12" id="jobDesc4">
-                    <h5>Microsoft</h5>
-                    <span class="jobDescText">Software Engineer II</span>
                     <br>
-                    <span class="jobDescText">CoreServices | Infrastructure, Backend</span>
-                    <br>
-                    <span class="jobDescText">Sept 2020 to Current</span>
-                    <div>
-                        <ul class="bullets">
-                            <li>Core Services Infrastructure team working with fault-tolerant distributed systems - providing 4 9s availability</li>
-                        </ul>
-
-                    </div>
-                </div>
-                <div class="jobDescDiv col-xs-12" id="jobDesc3">
-                    <h5>Microsoft</h5>
-                    <span class="jobDescText">Software Engineer</span>
-                    <br>
-                    <span class="jobDescText"><a href="https://docs.microsoft.com/en-us/power-platform/admin/environments-overview" target="_blank">Environment Lifecycle Orchestration</a> | Full-stack</span>
-                    <br>
-                    <span class="jobDescText">July 2019 to Aug 2020</span>
-                    <div>
-                        <ul class="bullets">
-                            <li>Designed, architected and implemented the full-stack component of the new reset experience in Power Platform Admin Centre using React, Redux and C# with increased telemetry granularity, reusable React components and simplified, improved environment reset lifecycle operation and API design. <a href="https://docs.microsoft.com/en-us/power-platform/admin/reset-environment" target="_blank">Official reset document can be found here.</a></li>
-                            <li>Designed and implemented the integration of multiple internal Microsoft services (AI Builder, Background jobs, Licensing and Capacity, Dynamics Sales Professional, SignOn Services, etc) to Power Platform by introducing new storage layers, handlers, and REST APIs and replacing the existing codebase without lowering SLA below 99.9%</li>
-                            <li>Identified a bottleneck in the existing, convoluted legacy system and improved the performance of a core business function 422% by safely deprecating parts of the system and implementing a new service</li>
-                            <li>Automated and reduced monthly operation cost by $11k (USD) by implementing a self-service API for recovering deleted environments thus reducing the load for on-call engineers and delivering a better customer experience in Power Platform Admin Centre</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="jobDescDiv col-xs-12" id="jobDesc2">
-                    <h5>SAP</h5>
-                    <span class="jobDescText">Agile Developer Intern</span>
-                    <br>
-                    <span class="jobDescText">Partner Benefits Catalogue | Full-stack</span>
-                    <br>
-                    <span class="jobDescText">May to Dec 2018</span>
-                    <div>
-                        <ul class="bullets">
-                            <li>Designed and implemented the 5-star rating and review system for SAP Partner Benefits Catalog using Java, Spring MVC, JavaScript and CSS</li>
-                            <li>Implemented REST APIs to retrieve data from SAP HANA and applied MVC design pattern to display and filter data through SAP PBC UI</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="jobDescDiv col-xs-12" id="jobDesc1">
-                    <h5>SAP</h5>
-                    <span class="jobDescText">Agile Developer Intern</span>
-                    <br>
-                    <span class="jobDescText">Partner Relationship Management - Mobility | Backend</span>
-                    <br>
-                    <span class="jobDescText">Jan to Apr 2018</span>
-                    <div>
-                        <ul class="bullets">
-                            <li>Implemented a micro-service to migrate data from on-premise to SAP HANA and improved the performance by 1300% by replacing the existing pipeline to retrieve the data from SAP HANA</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="jobDescDiv col-xs-12" id="jobDesc0">
-                    <h5>Amazon Web Services</h5>
-                    <span class="jobDescText">Software Development Engineer Intern</span>
-                    <br>
-                    <span class="jobDescText">AWS Aurora | Backend</span>
-                    <br>
-                    <span class="jobDescText">Jun to Aug 2017</span>
-                    <div>
-                        <ul class="bullets">
-                            <li>Designed and implemented real time logging system for AWS Aurora for enhanced identification and detection of issues occurring during database activities (provisioning, patching, autoscaling, migration, backups and recovery)</li>
-                        </ul>
-                    </div>
-                </div>
+                    <button id="aboutMyselfBtn" type="button" class="btn btn-primary" data-toggle="modal" data-target="#aboutMyselfModal">
+                        About Myself
+                    </button>
             </div>
         </div>
+    </div>
 
-        <div id="personalProjectSection" class="row featurette" data-spy="scroll" data-target="personalProject">
-            <div class="col-md-12 innerDiv">
-                <h2 id="personalProjectHeader" class="sectionHeader featurette-heading">Personal Projects</h2>
-                <div class="col-xs-12 personalProjectNoteDiv">
-                    <span>These are the projects I began or participated because I wanted to learn more about software engineering. They're mostly from the weekend-hackathons :)</span>
-                </div>
-                <div class="personalProjectDescDiv col-xs-12" id="personalProjectDesc3">
-                    <h5>Eye of Things @ SAP Talent Hackathon <span class="customBadges badge badge-primary">ML</span> <span class="customBadges badge badge-secondary">REST API</span> <span class="customBadges badge badge-warning">MICROSERVICES</span></h5>
-                    <span class="jobDescText">Apr 2017</span>
-                    <div>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container-fluid">
+            <div id="expHeaderSection">
+                <h3 class="display-5"><b>Experience</b></h3>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container-fluid msftJobInfo">
+            <div class="jobInfo">
+                <span class="expHeader"><b>Microsoft</b></span>
+                <br>
+                <span class="jobDescText">Software Engineer II</span>
+                <br>
+                <span class="jobDescText">Core Services | Infrastructure</span>
+                <br>
+                <span class="jobDescText">Sept 2020 to Current</span>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="jobDescriptionSection">
+                <ul class="bullets jobDescText">
+                    <li>Core Services Infrastructure team working with fault-tolerant distributed systems - providing 4 9s availability</li>    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container-fluid msftJobInfo">
+            <div class="jobInfo">
+                <span class="expHeader"><b>Microsoft</b></span>
+                <br>
+                <span class="jobDescText">Software Engineer</span>
+                <br>
+                <span class="jobDescText"><a href="https://docs.microsoft.com/en-us/power-platform/admin/environments-overview" target="_blank">Environment Lifecycle Orchestration</a> | Full-stack</span>
+                <br>
+                <span class="jobDescText">July 2019 to Aug 2020</span>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="jobDescriptionSection">
+                <ul class="bullets jobDescText">
+                    <li>Spearheaded, architected and implemented the full-stack component of the new reset experience in Power Platform Admin Centre using React, Redux and C# with increased telemetry granularity, reusable React components and shorter environment reset lifecycle operations and API design. <a href="https://docs.microsoft.com/en-us/power-platform/admin/reset-environment" target="_blank">Official reset document can be found here.</a></li>
+                    <li>Delivered the new Dynamics Sales Professional template email notification by onboarding Azure Email Orchestrator and deprecating the legacy email notifcation system.</li>
+                    <li>Designed and implemented the integration of multiple internal Microsoft services (AI Builder, Background jobs, Licensing and Capacity, Dynamics Sales Professional, SignOn Services, etc) to Power Platform by introducing new storage layers, handlers, and REST APIs and replacing the existing codebase without lowering SLA below 99.9%</li>
+                    <li>Identified a bottleneck in the existing, convoluted legacy system and improved the performance of a core business function 422% by safely deprecating parts of the system and implementing a new service</li>
+                    <li>Automated and reduced monthly operation cost by $11k (USD) by implementing a self-service API for recovering deleted environments thus reducing the load for on-call engineers and delivering a better customer experience in Power Platform Admin Centre</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container-fluid sapJobInfo">
+            <div class="jobInfo">
+                <span class="expHeader"><b>SAP</b></span>
+                <br>
+                <span class="jobDescText">Agile Developer Intern</span>
+                <br>
+                <span class="jobDescText">Partner Benefits Catalogue | Full-stack</span>
+                <br>
+                <span class="jobDescText">May to Dec 2018</span>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="jobDescriptionSection">
+                <ul class="bullets jobDescText">
+                    <li>Designed and implemented the full-stack component of the 5-star rating and review system for SAP Partner Benefits Catalog using Java, Spring MVC, jQuery and CSS</li>
+                    <li>Implemented REST APIs to retrieve data from SAP HANA and applied MVC design pattern to display and filter data through SAP PBC UI</li>
+                </ul>
+            </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container-fluid sapJobInfo">
+            <div class="jobInfo">
+                <span class="expHeader"><b>SAP</b></span>
+                <br>
+                <span class="jobDescText">Agile Developer Intern</span>
+                <br>
+                <span class="jobDescText">Partner Relationship Management | Backend</span>
+                <br>
+                <span class="jobDescText">Jan to Apr 2018</span>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="jobDescriptionSection">
+                <ul class="bullets jobDescText">
+                    <li>Implemented a micro-service to migrate data from on-premise to SAP HANA and improved the performance by 1300% by replacing the existing pipeline to retrieve the data from SAP HANA</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container-fluid awsJobInfo">
+            <div class="jobInfo">
+                <span class="expHeader"><b>Amazon Web Services</b></span>
+                <br>
+                <span class="jobDescText">Software Development Engineer Intern</span>
+                <br>
+                <span class="jobDescText">AWS Aurora | Backend</span>
+                <br>
+                <span class="jobDescText">Jun to Aug 2017</span>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="jobDescriptionSection">
+                <ul class="bullets jobDescText">
+                    <li>Designed and implemented new monitoring and alerting system for AWS Aurora for enhanced identification and detection of issues occurring during database activities (provisioning, patching, autoscaling, migration, backups and recovery)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div id="personalProjectSection" class="container-fluid">
+            <div id="expHeaderSection">
+                <h3 class="display-5"><b>Personal Projects</b></h3>
+            </div>
+            <div id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Eye of Things @ SAP Talent Hackathon 
+                      </button>
+                      <span class="customBadges badge bg-primary">ML</span> <span class="customBadges badge bg-secondary">REST API</span> <span class="customBadges badge bg-warning">MICROSERVICES</span>
+                      <span class="personalProjectDate jobDescText">Apr 2017</span>
+                    </h5>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
                         <ul class="bullets">
                             <li>Won 1st place by working in a team of 4 to create a functional app related to IoT and security in 24 hours</li>
                             <li>Integrated TensorFlow’s built-in image recognition model to classify a potential hazardous picture - applied data augmentation and dropout to reduce overfitting</li>
                             <li>Implemented a microservice that returns the results of the input photos</li>
                             <li>Technologies used: NodeJS, TensorFlow, Java, mongoDB</li>
                         </ul>
-
                     </div>
+                  </div>
                 </div>
-                <div class="personalProjectDescDiv col-xs-12" id="personalProjectDesc2">
-                    <h5>Ticket Ordering System for Coast Capital Savings <span class="customBadges badge badge-secondary">REST API</span> <span class="customBadges badge badge-warning">MICROSERVICES</span></h5>
-                    <span class="jobDescText">Jan - Apr 2017</span>
-                    <div>
+                <div class="card">
+                  <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Ticket Ordering System for Coast Capital Savings
+                      </button>
+                      <span class="customBadges badge bg-secondary">REST API</span>
+                      <span class="customBadges badge bg-warning">MICROSERVICES</span>
+                      <span class="personalProjectDate jobDescText">Jan - Apr 2017</span>
+                    </h5>
+                  </div>
+                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
                         <ul class="bullets">
                             <li>Worked in a team of 6 and co-operated with Coast Capital's IT department team members to create a functional web interface for their internal employee tool</a></li>
                             <li>Implemented a layer of LRU cache to reduce the user request waiting time from average of 9s to 1s</li>
@@ -194,11 +213,21 @@
                             <li>Technologies used: Java, Jersey, MSSQL, Azure</li>
                         </ul>
                     </div>
+                  </div>
                 </div>
-                <div class="personalProjectDescDiv col-xs-12" id="personalProjectDesc1">
-                    <h5>UBC Course Ranker <span class="customBadges badge badge-secondary">REST API </span> <span class="customBadges badge badge-warning">MICROSERVICES</span></h5>
-                    <span class="jobDescText">Mar 2017</span>
-                    <div>
+                <div class="card">
+                  <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        UBC Course Ranker
+                      </button>
+                      <span class="customBadges badge bg-secondary">REST API </span> 
+                      <span class="customBadges badge bg-warning">MICROSERVICES</span>
+                      <span class="personalProjectDate jobDescText">Mar 2017</span>
+                    </h5>
+                  </div>
+                  <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
                         <ul class="bullets">
                             <li>Worked in a team of 4 to create a functional web application under 24 hours</li>
                             <li>Implemented a parser that converts a CSV file into a batch insert SQL query file</li>
@@ -206,117 +235,91 @@
                             <li>Technologies used: Java, NodeJS, CockroachDB, Azure</li>
                         </ul>
                     </div>
+                  </div>
                 </div>
-                <div class="personalProjectDescDiv col-xs-12" id="personalProjectDesc0">
-                    <h5>OpenFarm <span class="customBadges badge badge-secondary">REST API </span> <span class="customBadges badge badge-warning">MICROSERVICES</span></h5>
-                    <span class="jobDescText">Jul 2016</span>
-                    <div>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            OpenFarm
+                        </button>
+                        <span class="customBadges badge bg-secondary">REST API </span> <span class="customBadges badge bg-warning">MICROSERVICES</span>
+                        <span class="personalProjectDate jobDescText">Jul 2016</span>
+                      </h5>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                      <div class="card-body">
                         <ul class="bullets">
-                            <li>Won 2nd place by working in a team of 5 to create a web app related to IoT in 24 hours</li>
+                            <li>Won <a href="https://www.credential.net/e3fd7e8b-4d29-4f9f-bcb2-c763f39751c4#gs.p11eq5" target="_blank">2nd place</a> by working in a team of 5 to create a web app related to IoT in 24 hours</li>
                             <li>Integrated Telus API and mongoDB to store and notify user’s order status through SMS realtime</li>
                             <li>Implemented a microservice that handles requests related to produces and user information integrating TM Forum’s API</li>
                             <li>Technologies used: NodeJS, mongoDB</li>
                         </ul>
+                      </div>
                     </div>
-                </div>
-            </div>
+                  </div>
+              </div>
         </div>
-
-        <div id="contactSection" class="row featurette" data-spy="scroll" data-target="contact">
-            <div class="col-md-12 innerDiv">
-                <h2 id="contactHeader" class="sectionHeader featurette-heading">Contact</h2>
-                <div class="row contactDiv">
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                        <span>Feel free to email me, I'll try my best to get back to you ASAP!</span>
-                        <form id="contactForm" action="mailto:peterysc@gmail.com" method=”POST” enctype="text/plain" name=”EmailForm”>
-                            <div class="form-group row">
-                                <div class="col-sm-5">
-                                <input type="text" class="form-control" id="colFormYourNameLg" placeholder="Name" required>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-sm-7">
-                                    <input type="email" class="form-control" id="colFormLabelLg" placeholder="Email" required>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-sm-7">
-                                <input type="text" class="form-control" id="colFormLabelLg" placeholder="How did you find about me?"required >
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-sm-7">
-                                    <textarea class="form-control" id="messageTextArea" rows="3" placeholder="Message" required></textarea>
-                                </div>
-                            </div>
-                            <button class="btn btn-primary" type="submit">Submit Form <i class="fab fa-telegram-plane"></i></button>
-                        </form>
-                    </div>
-                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                        <div id="workInProgress">
-                            <p>this part of Contact section is in progress</p>
-                            <i class="fas fa-hard-hat fa-2x"></i> 
-                            <i class="fas fa-hammer fa-2x"></i>
-                        </div>                    
-                        <br>
-                        <br>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                            </div>
-                        </div>
-                        <!--
-                        <div class="row">
-                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="text-align: center;">
-                                <span>
-                                    <i class="fa fa-linkedin fa-5x" style="color:#4C6EF5"></i>
-                                </span>
-                            </div>
-                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="text-align: center;">
-                                <span>
-                                    <i class="fab fa-instagram fa-5x" style="color:#F76707;"></i>
-                                </span>
-                            </div>
-                            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4" style="text-align: center;">
-                                <span>
-                                    <i class="fab fa-github fa-5x"></i>
-                                </span>
-                            </div>
-                        </div>
-                        -->
-                    </div>
+        
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="aboutMySelfModal" tabindex="-1" role="dialog" aria-labelledby="aboutMySelfModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="aboutMySelfModalTitle">Hi there, my name is Peter :^) </h5>
+                    <button type="button" class="modalClose btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                
-                <div id='map' class="col-xs-12"></div>
-            </div>
-        </div>
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLongTitle">Being a Seahawks fan ain't easy</h5>
-                        <button type="button" class="modalClose close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                        <img id="seahawksJokeImg" src="assets/seahawks_fans.jpg">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="modalClose btn btn-secondary" data-dismiss="modal">Close</button>
-                    </div>
+                <div class="modal-body">
+                    <p id="introP" class="lead">
+                        I'm a strong believer of <b><i>Fail Fast</i></b> and learning is at my core. I really enjoy programming and solving problems. I absolutely enjoy discovering simpler solutions to complex problems. I am always looking forward to learn something new and share it with others!
+                        <br><br>
+                        
+                        I am currently based in Seattle, Washington. I love every aspect of what Seattle can offer - from the majestic, sublime PNW curves, to the endless but serene rain/showers and finally, the emotional roller coaster ride Seahawks generously offer their fans every game...
+                        
+                        <br><br>
+                    
+                        When the weather permits, I try my best to stay outdoors - I love riding my roadbike and hitting the slopes to shred on fresh powder with my snowboard. 
+                        When the weather does not permit, I'm always looking for documentaries like Social Dilemma
+                        or cookings shows like the Chef TV show on Netflix. I also like to read - the list of books I've read so far and my interpretation of each will be available soon in my blog.
+                        <br><br>
+                    
+                        As for a professional introduction, I am currently working at Microsoft with a title of Software Engineer II. <br>I work with fault tolerant distributed systems in CoreServices team under <a href="https://powerplatform.microsoft.com/en-us/" target="_blank">Power Platform</a>. Prior to this team, I have worked in highly available API developments
+                        and had a decent exposure in full-stack engineering (please excuse V2 of this Bootstrap-ed portfolio, more updates coming along!)
+                        
+                        <br><br>
+                        As for my undergrad, I completed the bachelors of Science, majoring in Computer Science, at the University of British Columbia (Go t-birds!) and received couple of Dean's Honour List.
+                        
+                        <br><br>
+        
+                        Cheers to you if you've managed to read this far!
+                        <a href="mailto:peterysc@gmail.com">Holla at your boy</a> if you find my work experience somehow relevant/beneficial to your career. Holla for anything really - extra points if you know a good poutine joint in Seattle!
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modalClose btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
+
     <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up fa-3x"></i></a>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <script src="js/googleMaps.js"></script>
-    <script src="js/index.js"></script>
-</body>
+    <div id="secondMainSection" class="mainSection"></div>
 
-</main>
+    <footer class="footer">
+        <div id="footerDiv" class="container-fluid">
+            <span id="developedBy" class="text-muted">Developed by <a href="https://www.linkedin.com/in/peterysc/" target="_blank">Peter Chung</a> | V 2.0</span>
+            <br>
+            <span id="v1Span"><a href="https://github.com/peterysc/peteryschung.com/tree/v1" target="blank">V 1.0 can be found here</a></span>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous" defer></script>
+    <script src="js/index.js"></script>
+
+</body>
 
 </html>

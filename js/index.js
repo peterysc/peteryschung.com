@@ -1,19 +1,5 @@
-$("#moveToExp").on('click', function(e) {
-	e.preventDefault();
-	scrollSpyToSection("#expSection");
-});
-
-$("#moveToPersonalProject").on('click', function(e) {
-	e.preventDefault();
-	scrollSpyToSection("#personalProjectSection");
-});
-
-$("#moveToContact").on('click', function(e) {
-	e.preventDefault();
-	scrollSpyToSection("#contactSection");
-});
-
 $(document).ready(function(){
+
 	$(window).scroll(function () {
 		if ($(this).scrollTop() > 50) {
 			$('#back-to-top').fadeIn();
@@ -26,22 +12,15 @@ $(document).ready(function(){
 	$('#back-to-top').click(function () {
 		$('body,html').animate({
 			scrollTop: 0
-			}, 1000);
+			}, 200);
 		return false;
 	});
 
-	$('#seahawksJokeBtn').click(function() {
-		$('#exampleModalLong').modal('show');
-	  });
+	$('#aboutMyselfBtn').click(function() {
+		$('#aboutMySelfModal').modal('show');
+	});
 	
 	$('.modalClose').click(function(){
-		$('#exampleModalLong').modal('hide');
+		$('#aboutMySelfModal').modal('hide');
 	})
 });
-
-function scrollSpyToSection(section){
-	$('html, body').animate({
-		scrollTop: $(section).offset().top
-	}, 1000);
-}
-
