@@ -125,23 +125,24 @@
     background-image: url("../assets/bash_background.png");
     background-size: cover;
     color: black;
-    width: 45%;
-    height: 100%;
+    width: 45vw;
+    height: 30vh + 30vw;
     overflow:hidden;
     margin: auto;
 }
 
 #introPicDiv{
-    padding:10% 5% 10% 5%;
+    padding:8% 5% 10% 5%;
     text-align: center;
 }
 
 #introTitles{
-    padding:15% 5% 10% 5%;
+    padding:10% 5% 10% 5%;
     text-align: center;
 }
 
 #quickIntroPic{
+    margin:auto;
     height: auto;
     max-height: 15em;
 }
