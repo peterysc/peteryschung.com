@@ -16,6 +16,12 @@
     padding:0;
 }
 
+#faultTolerant{
+    font-size: 14px;
+    text-align: right;
+    list-style-type: none;
+}
+
 .jobInfo{
     margin-left: 15%;
     margin-right: 15%;
